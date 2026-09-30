@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisGra Code Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=8" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top"><span class="brand-mark">&lt;/&gt;</span><span>VisGra <em>Code Quest</em></span></a>
+      <div class="header-stats"><span class="stat-pill"><span class="spark">✦</span><strong id="xp">0</strong> XP</span><span class="stat-pill"><span class="flame">♨</span><strong id="streak">0</strong> streak</span></div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow">CS0045 · COMPUTER GRAPHICS &amp; VISUAL COMPUTING</div>
+        <h1>Fill the blank.<br><span>Build the visual.</span></h1>
+        <p>Sharpen your OpenGL instincts one missing line at a time. Pick a module, complete the snippet, and collect XP as you go.</p>
+        <div class="hero-meta"><span>⚡ 80 challenges</span><span>◷ self-paced</span><span>✓ instant feedback</span></div>
+      </section>
+
+      <section class="module-picker" aria-label="Choose a module">
+        <div class="section-label"><span>01</span> CHOOSE YOUR MODULE</div>
+        <div id="module-tabs" class="module-tabs"></div>
+      </section>
+
+      <section class="reviewer" id="reviewer">
+        <div class="reviewer-head">
+          <div><div class="section-label"><span id="module-number">MODULE 01</span> · CURRENT RUN</div><h2 id="module-title"></h2><p id="module-subtitle"></p></div>
+          <div class="module-score"><strong id="module-progress">0 / 20</strong><span>module progress</span><button class="button text restart-module" id="restart-module">↻ Restart module</button></div>
+        </div>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <div id="challenge-card"></div>
+      </section>
+    </main>
+    <footer><span>VISGRA / CODE QUEST</span><span>Built for focused practice · <button id="reset-all">reset progress</button></span></footer>
+  </div>
+  <div id="toast" role="status"></div>
+  <script src="app.js?v=8"></script>
+</body>
+</html>
